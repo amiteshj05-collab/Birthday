@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sanskrati ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+radial-gradient(circle at 20% 20%, #ffe3ef 0%, transparent 25%),
+radial-gradient(circle at 80% 30%, #ffd6f0 0%, transparent 20%),
+radial-gradient(circle at 30% 80%, #fff0b8 0%, transparent 20%),
+linear-gradient(135deg,#ffd6e7,#fff7fa,#e8f7ff);
+overflow-x:hidden;
+color:#333;
+position:relative;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px;
+text-align:center;
+}
+
+.hidden{
+display:none;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:15px;
+color:#ff4f92;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:20px;
+color:#ff4f92;
+}
+
+p{
+font-size:1.1rem;
+line-height:1.8;
+max-width:750px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 32px;
+border:none;
+border-radius:50px;
+background:#ff6fa8;
+color:white;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.welcome-panda{
+width:300px;
+max-width:90%;
+margin-bottom:25px;
+animation:floatPanda 3s ease-in-out infinite;
+}
+
+.final-panda{
+width:320px;
+max-width:90%;
+margin-top:30px;
+animation:bouncePanda 2s infinite;
+}
+
+@keyframes floatPanda{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-12px);
+}
+}
+
+@keyframes bouncePanda{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:100%;
+max-width:1000px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:10px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+opacity:0;
+animation:fadeInUp 1s ease forwards;
+}
+
+.card:nth-child(1){
+animation-delay:.2s;
+}
+
+.card:nth-child(2){
+animation-delay:.5s;
+}
+
+.card:nth-child(3){
+animation-delay:.8s;
+}
+
+.card:nth-child(4){
+animation-delay:1.1s;
+}
+
+@keyframes fadeInUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.photo{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+display:block;
+transition:.5s;
+animation:photoFloat 4s ease-in-out infinite;
+}
+
+.card:hover .photo{
+transform:scale(1.08);
+}
+
+@keyframes photoFloat{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-8px);
+}
+}
+
+.card{
+background:white;
+padding:10px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+opacity:0;
+transform:translateY(20px);
+animation:fadeInUp 1s ease forwards;
+}
+
+.card:nth-child(1){
+animation-delay:.2s;
+}
+
+.card:nth-child(2){
+animation-delay:.5s;
+}
+
+.card:nth-child(3){
+animation-delay:.8s;
+}
+
+.card:nth-child(4){
+animation-delay:1.1s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+transition:.4s;
+}
+
+.card:hover .photo{
+transform:scale(1.05);
+}
+
+@keyframes fadeInUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.letter{
+background:white;
+padding:30px;
+border-radius:25px;
+max-width:900px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+text-align:left;
+}
+
+.typewriter{
+white-space:pre-wrap;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.floating{
+position:fixed;
+font-size:25px;
+pointer-events:none;
+animation:float 8s linear infinite;
+z-index:999;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+.final-title{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.footer-text{
+font-size:1.3rem;
+font-weight:600;
+margin-top:10px;
+}
+
+.bg-decoration{
+position:fixed;
+opacity:.15;
+font-size:50px;
+pointer-events:none;
+z-index:-1;
+animation:floatDecor 10s linear infinite;
+}
+
+@keyframes floatDecor{
+0%{
+transform:translateY(100vh) rotate(0deg);
+}
+100%{
+transform:translateY(-100px) rotate(360deg);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="savera.mpeg" type="audio/mpeg">
+</audio>
+
+<div class="bg-decoration" style="left:10%">🌸</div>
+<div class="bg-decoration" style="left:35%">🎀</div>
+<div class="bg-decoration" style="left:60%">💖</div>
+<div class="bg-decoration" style="left:85%">✨</div>
+
+<!-- PAGE 1 -->
+
+<section id="welcome">
+
+<img src="panda1.png" class="welcome-panda" alt="Birthday panda">
+
+<h1>Happy Birthday Sanskrati ❤️</h1>
+
+<p>
+</p>
+
+<button class="btn" onclick="startExperience()">
+Start ✨
+</button>
+
+</section>
+<section id="cakePage" class="hidden">
+
+<img src="cake.png"
+style="width:280px;max-width:90%;margin-bottom:25px;">
+
+<h2>A Birthday Cake For You 🎂</h2>
+
+<p style="
+margin-top:20px;
+font-size:1.3rem;
+font-weight:600;
+color:#ff4f92;
+">
+✨ Close your eyes and make a wish ✨
+</p>
+
+<button class="btn" onclick="cutCake()">
+Cut The Cake 🎂
+</button>
+
+</section>
+
+<!-- PAGE 2 -->
+
+<section id="giftPage" class="hidden">
+
+<img src="rose.png"
+style="
+width:300px;
+max-width:90%;
+margin-bottom:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+">
+
+<div style="font-size:100px;">
+
+</div>
+
+<p>
+For the most dramatic person I know 😂❤️
+</p>
+
+<button class="btn" onclick="showPage('galleryPage')">
+Open It 🎁
+</button>
+
+</section>
+
+<!-- PAGE 3 -->
+
+<section id="galleryPage" class="hidden">
+
+<h2>📸 Our Memory Forest ❤️</h2>
+
+<p style="margin-bottom:25px;">
+A collection of our favorite memories ✨
+</p>
+
+<div class="gallery">
+
+<div class="card">
+<img src="photo1.jpg" class="photo">
+</div>
+
+<div class="card">
+<img src="photo2.jpeg" class="photo">
+</div>
+
+<div class="card">
+<img src="photo3.jpeg" class="photo">
+</div>
+
+<div class="card">
+<video class="photo" autoplay muted loop playsinline>
+    <source src="video1.mp4" type="video/mp4">
+</video>
+</div>
+
+<button class="btn" onclick="showPage('letterPage')">
+           Read Your Letter 💌
+</button>
+
+</section>
+
+<!-- PAGE 4 -->
+
+<section id="letterPage" class="hidden">
+
+<div class="letter">
+
+<h2>💌 Letter For Sanskratiii</h2>
+
+<div id="typewriter" class="typewriter"></div>
+
+</div>
+
+<button class="btn" onclick="showPage('finalPage')">
+Open Your Gift 🎁
+</button>
+
+</section>
+
+<!-- PAGE 5 -->
+
+<section id="finalPage" class="hidden">
+
+<h1 class="final-title">
+HAPPY BIRTHDAY SANSKRATI ❤️
+</h1>
+
+<p class="footer-text">
+Thank you for being my favorite headache,
+best friend and daily source of drama 😂❤️
+</p>
+
+<img src="panda2.png" 
+class="final-panda">
+
+</section>
+
+<script>
+
+function startExperience(){
+
+    document.getElementById("bgMusic").play();
+
+    showPage("cakePage");
+}
+
+function showPage(id){
+
+document.querySelectorAll("section").forEach(section=>{
+section.classList.add("hidden");
+});
+
+document.getElementById(id).classList.remove("hidden");
+
+if(id==="letterPage"){
+startTyping();
+}
+}
+
+const letter = `Happy Birthday, Sanskrati 🎉😂
+
+To the girl who gets angry at literally everything I do, argues with me for no reason, and somehow we're still the closest to each other—Happy Birthday!
+
+Thank you for giving me daily lectures that I never asked for and sharing every random story that comes to your mind. 😂
+
+We've had countless arguments, unnecessary fights, and dramatic moments, but somehow we always end up talking again like nothing happened. That's probably what makes our friendship special.
+
+I hope this year gives you happiness, success, and maybe a little patience—especially when dealing with me. Though let's be honest, that's probably not happening. 😭
+
+Stay loud, stay dramatic, stay stubborn, and stay exactly the way you are. Life would be way too boring without your constant complaints and random anger.
+
+Happy Birthday, Sanskrati!❤️
+
+Now enjoy your day and try not to find something to be mad about for at least 24 hours. 🎂😂`;
+
+let typed = false;
+
+function startTyping(){
+
+if(typed) return;
+
+typed = true;
+
+let i = 0;
+
+const target = document.getElementById("typewriter");
+
+function type(){
+
+if(i < letter.length){
+
+target.textContent += letter.charAt(i);
+
+i++;
+
+setTimeout(type,18);
+
+}
+
+}
+
+type();
+}
+function cutCake(){
+
+alert("🌟 Wish made? Then let's celebrate! 🎂❤️");
+
+showPage("giftPage");
+
+
+}
+function floatingHearts(){
+
+const icons=["❤️","🌸","✨","💖","🎀"];
+
+const heart=document.createElement("div");
+
+heart.className="floating";
+
+heart.innerHTML=
+icons[Math.floor(Math.random()*icons.length)];
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=
+(18+Math.random()*20)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+}
+
+setInterval(floatingHearts,700);
+
+</script>
+
+</body>
+</html>
