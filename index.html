@@ -326,7 +326,15 @@ transform:translateY(110vh) rotate(360deg);
 opacity:0;
 }
 }
-
+    
+.memory-text{
+margin-top:10px;
+font-size:1rem;
+font-weight:600;
+color:#ff4f92;
+text-align:center;
+}
+    
 </style>
 </head>
 
@@ -425,22 +433,36 @@ A collection of our favorite memories ✨
 
 <div class="card">
 <img src="photo1.jpg" class="photo">
+<p class="memory-text">
+HAPPY 🌸 🧸ྀི
+</p>
 </div>
 
 <div class="card">
 <img src="photo2.jpeg" class="photo">
+<p class="memory-text">
+BIRTHDAY 🎂
+</p>
 </div>
 
 <div class="card">
 <img src="photo3.jpeg" class="photo">
+<p class="memory-text">
+TO
+</p>
 </div>
 
 <div class="card">
 <video class="photo" autoplay muted loop playsinline>
     <source src="video1.mp4" type="video/mp4">
 </video>
+<p class="memory-text">
+YOU 🥂🥂
+</p>
 </div>
-
+    
+</div>
+    
 <button class="btn" onclick="showPage('letterPage')">
            Continue 💌
 </button>
@@ -557,11 +579,7 @@ const cake = document.getElementById("birthdayCake");
 cake.classList.add("cake-cut");
 
 setTimeout(() => {
-
-    alert("🌟 Wish made? Then let's celebrate! 🎂❤️");
-
     showPage("giftPage");
-
 },1200);
 
 }
